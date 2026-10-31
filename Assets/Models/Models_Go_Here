@@ -1,0 +1,9 @@
+All 3D Models go here.
+
+It is preferred that you sort them by type, for example
+
+./Models
+    | - Character
+    |       | - Character Models
+    | - Anomaly
+    |       | - Anomaly Models

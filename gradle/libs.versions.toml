@@ -1,0 +1,15 @@
+[versions]
+# Define versions here
+godot-jvm = "0.16.2-4.6.3"
+kotlin = "2.4.20"
+
+
+[libraries]
+# Define libraries here
+
+[plugins]
+# Define plugins here
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+godot-jvm-lib = { id = "com.utopia-rise.godot-kotlin-jvm", version.ref = "godot-jvm" }
+
+
