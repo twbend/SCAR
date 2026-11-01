@@ -25,7 +25,10 @@ godot {
 }
 
 dependencies {
-    testImplementation(libs.j.unit.api)
+    testImplementation(kotlin("test-junit5"))
+    testImplementation(libs.j.unit.core)
+    testImplementation(libs.io.mockk)
+    testRuntimeOnly(libs.j.unit.engine)
 }
 
 tasks.test {

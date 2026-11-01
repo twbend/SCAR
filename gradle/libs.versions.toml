@@ -2,12 +2,15 @@
 # Define versions here
 godot-jvm = "1.0.0"
 kotlin = "2.4.20"
-j-unit = "5.10.0"
-
+j-unit = "5.10.2"
+mockk = "1.14.11"
 
 [libraries]
 # Define libraries here
-j-unit-api = { module = "org.junit.jupiter:junit-jupiter", version.ref = "j-unit" }
+# Testing Libraries
+j-unit-core = { module = "org.junit.jupiter:junit-jupiter", version.ref = "j-unit" }
+j-unit-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "j-unit" }
+io-mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 
 [plugins]
 # Define plugins here
