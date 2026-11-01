@@ -1,15 +1,17 @@
 [versions]
 # Define versions here
-godot-jvm = "0.16.2-4.6.3"
+godot-jvm = "1.0.0"
 kotlin = "2.4.20"
+j-unit = "5.10.0"
 
 
 [libraries]
 # Define libraries here
+j-unit-api = { module = "org.junit.jupiter:junit-jupiter", version.ref = "j-unit" }
 
 [plugins]
 # Define plugins here
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
-godot-jvm-lib = { id = "com.utopia-rise.godot-kotlin-jvm", version.ref = "godot-jvm" }
+godot-jvm-lib = { id = "com.utopia-rise.godot-jvm", version.ref = "godot-jvm" }
 
 
