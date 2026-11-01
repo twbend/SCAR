@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c64d5fo1igt7y"]
+
+[ext_resource type="PackedScene" uid="uid://7m381rjfmrhs" path="res://src/main/Characters/PlayerCharacter.tscn" id="1_iillh"]
+[ext_resource type="PackedScene" uid="uid://d2vb1pil4lx8m" path="res://src/main/TestObjects/Block.tscn" id="2_okpi3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iillh"]
+albedo_color = Color(0.49803922, 1, 1, 1)
+metallic = 0.45
+
+[sub_resource type="BoxMesh" id="BoxMesh_ylpcm"]
+material = SubResource("StandardMaterial3D_iillh")
+size = Vector3(100, 1, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ylpcm"]
+size = Vector3(100, 1, 100)
+
+[node name="TestingLevel" type="Node3D" unique_id=1217748840]
+
+[node name="PlayerCharacter" parent="." unique_id=2082538158 instance=ExtResource("1_iillh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0106335, 0.9321157, 0)
+
+[node name="Floor" type="StaticBody3D" parent="." unique_id=1095168492]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=293603758]
+mesh = SubResource("BoxMesh_ylpcm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=1410399545]
+shape = SubResource("BoxShape3D_ylpcm")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1793775767]
+transform = Transform3D(0.99972475, 0.02346222, 0, -0.018614048, 0.7931442, 0.60874933, 0.01428261, -0.6085818, 0.7933626, 0, 8.254562, 0)
+
+[node name="Block" parent="." unique_id=969953588 instance=ExtResource("2_okpi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8868885, 2.0604773, 10.066263)
+
+[node name="Block2" parent="." unique_id=1990131410 instance=ExtResource("2_okpi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.099198, 1, 4.947543)
+
+[node name="Block3" parent="." unique_id=1040859360 instance=ExtResource("2_okpi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5033002, 1, -1.5259128)

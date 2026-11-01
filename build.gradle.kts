@@ -1,5 +1,4 @@
-import godot.entrygenerator.settings.RegisteredNameMode
-import godot.entrygenerator.settings.RegistrationFileLayoutMode
+import godot.annotation.processor.classgraph.AnnotationProcessingMode
 import godot.gradle.GodotLanguage
 
 plugins {
@@ -15,15 +14,20 @@ repositories {
 godot {
     // --------- Setup ---------
     languages.set(setOf(GodotLanguage.KOTLIN))
-    godotProjectDirectory.set(file(".")) // only change this if the Godot project root is not this Gradle project directory
-    registrationFilesDirectory.set(file("gdj")) // defaults to <godotProjectDirectory>/gdj
 
-    registrationFilesLayoutMode.set(RegistrationFileLayoutMode.FLAT)
-    registrationNameMode.set(RegisteredNameMode.SIMPLE_NAME)
+    registration.annotationProcessingMode.set(AnnotationProcessingMode.Inferred)
 
     // Enable coroutines integration with Godot signal/lifecycle callbacks.
     isGodotCoroutinesEnabled.set(true)
 
     // --------- Toolchain ---------
-    kotlinVersion.set(libs.versions.kotlin)
+    toolchain.kotlinVersion.set(libs.versions.kotlin)
+}
+
+dependencies {
+    testImplementation(libs.j.unit.api)
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
