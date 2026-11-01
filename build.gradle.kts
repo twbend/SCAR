@@ -34,3 +34,8 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks.check {
+    // In the future we can add more validations here.
+    dependsOn(tasks.test)
+}
