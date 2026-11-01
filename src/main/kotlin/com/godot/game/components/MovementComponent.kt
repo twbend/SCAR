@@ -26,7 +26,7 @@ import kotlin.math.atan2
  * @property visualRootPath The [NodePath] pointing to the visual root of the entity.
  */
 @Script
-class MovementComponent : Node() {
+class MovementComponent : Node(), IMovementComponent {
 
     companion object {
         const val COMPONENT_NAME = "MovementComponent"
@@ -65,7 +65,7 @@ class MovementComponent : Node() {
     private lateinit var visualRoot: Node3D
 
 
-    var movementDirection: Float = 0f
+    override var movementDirection: Float = 0f
         private set
 
     override fun _ready() {
@@ -83,7 +83,7 @@ class MovementComponent : Node() {
      * @param isSprinting Whether the entity is sprinting or not.
      * @param isAiming Whether the entity is aiming or not.
      */
-    fun processMovement(delta: Double, isSprinting: Boolean, isAiming: Boolean) {
+    override fun processMovement(delta: Double, isSprinting: Boolean, isAiming: Boolean) {
         val dt = delta.toFloat()
 
         handleMovement(dt, isSprinting, isAiming)

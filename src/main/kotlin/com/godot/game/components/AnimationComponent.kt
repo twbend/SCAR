@@ -13,7 +13,7 @@ import godot.core.Vector2
  * @property animationTreePath The [NodePath] that points to the [AnimationTree].
  */
 @Script
-class AnimationComponent : Node() {
+class AnimationComponent : Node(), IAnimationComponent {
 
 	companion object {
 		private const val LOCOMOTION_BLEND_POSITION_PATH = "parameters/Locomotion/blend_position"
@@ -36,7 +36,7 @@ class AnimationComponent : Node() {
 	 * @param speed The player's current speed.
 	 * @param direction The direction that the player is moving.
 	 */
-	fun updateAnimation(speed: Float, direction: Float) {
+    override fun updateAnimation(speed: Float, direction: Float) {
 		val weightedSpeed = speed / 10.0
 		val weightedDirection = direction / 10.0
 		animTree.set(LOCOMOTION_BLEND_POSITION_PATH, Vector2(weightedDirection, weightedSpeed))
