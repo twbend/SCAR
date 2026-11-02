@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1f15400ef43f3558",
+        "id": "98c0c60932bb7129",
         "type": "tabs",
         "children": [
           {
-            "id": "692ca89fd99d75e9",
+            "id": "c28c26a85156c942",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Documentation/.obsidian/app.json",
-                "bFile": "Documentation/.obsidian/app.json",
-                "aRef": ""
+                "file": "Project Overview.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: app.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Project Overview"
             }
           }
         ]
@@ -99,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Project Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Project Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -159,6 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Project Overview.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -196,6 +199,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "692ca89fd99d75e9",
-  "lastOpenFiles": []
+  "active": "c28c26a85156c942",
+  "lastOpenFiles": [
+    "Images/requiem.gif",
+    "Images",
+    "Images/hd2.gif",
+    "Project Overview.md"
+  ]
 }
