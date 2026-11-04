@@ -1,0 +1,36 @@
+name: Bug Report
+description: File a structured bug report to help us fix the issue
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Provide a clear and concise description of the issue.
+      placeholder: What goes wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Tell us exactly how to reproduce the behavior.
+      placeholder: |
+        1. Go to...
+        2. Click on...
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity / Impact
+      options:
+        - Low (Cosmetic/Annoyance)
+        - Medium (Functional workaround exists)
+        - High (Blocks core functionality)
+        - Critical (Crash/Data loss)
+    validations:
+      required: true

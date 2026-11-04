@@ -1,0 +1,71 @@
+
+name: Feature Proposal
+
+description: Propose a new gameplay mechanic, system, or feature.
+
+title: "[PROPOSAL]: "
+
+labels: ["feature-proposal"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Proposal
+
+        You do not need to know how this should be programmed.
+        Focus on describing the gameplay experience and idea.
+
+  - type: textarea
+    id: concept
+    attributes:
+      label: Core Idea
+      description: What is the feature? Explain it in your own words.
+      placeholder: Describe your idea...
+    validations:
+      required: true
+
+  - type: textarea
+    id: player_experience
+    attributes:
+      label: Player Experience
+      description: What would players actually do or experience?
+      placeholder: Describe an example gameplay scenario...
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why Should This Exist?
+      description: What problem does this solve, or what does it add to the game?
+    validations:
+      required: true
+
+  - type: textarea
+    id: pillars
+    attributes:
+      label: Design Pillar Connection
+      description: Which aspects of the game's design do you think this supports?
+      placeholder: |
+        How does this contribute to chaos?
+        How does this contribute to investigation?
+        Does it support other aspects of the game?
+    validations:
+      required: false
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples and Inspiration
+      description: Other games, mechanics, scenarios, or references that inspired this.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Thoughts
+      description: Anything else worth considering?
+    validations:
+      required: false
