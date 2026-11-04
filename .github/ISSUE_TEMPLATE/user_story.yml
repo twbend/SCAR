@@ -1,0 +1,55 @@
+name: User Story
+description: Propose a new feature, capability, or user-centric requirement.
+title: "[STORY]: "
+labels: ["story"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out this user story template to help us understand the requirement and define its boundaries.
+
+  - type: textarea
+    id: story-core
+    attributes:
+      label: Story Description
+      description: Express this story using the standard Agile format.
+      placeholder: |
+        As a [role / player type]...
+        I want [an action / a capability]...
+        So that [a benefit / value is delivered]...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Provide the specific test scenarios or constraints that define the boundaries of this story (e.g., Given/When/Then or a checklist).
+      placeholder: |
+        - [ ] Scenario 1: Given... When... Then...
+        - [ ] Scenario 2: It must support...
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: Business Value & Context
+      description: Why is this highly prioritized? What problem or pain point does it solve?
+      placeholder: |
+        This feature ...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Initial Priority Assessment
+      description: Select the perceived priority level based on user impact.
+      options:
+        - Must Have
+        - Should Have
+        - Could Have
+        - Won't Have (for now)
+    validations:
+      required: false
