@@ -1,0 +1,15 @@
+site_name: SCAR Docs
+site_url: https://github.io
+
+theme:
+  name: material
+
+# Link back to your source repository
+repo_name: twbend/SCAR
+repo_url: https://github.com/twbend/SCAR
+
+# Navigation Structure
+nav:
+  - Home: Project_Overview.md
+  - GettingStarted: Getting_Started.md
+  - HelpfulResources: Helpful_Resources.md
