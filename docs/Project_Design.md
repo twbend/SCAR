@@ -1,18 +1,5 @@
-# Project Overview
+# Project Design
 
-[TOC]
-
-The game is a cooperative third-person action-investigation game in which a team of SCAR operatives enters dangerous environments to investigate unexplained phenomena, identify anomalies, complete objectives, and survive increasingly chaotic encounters.
-
-Each mission presents players with a partially unknown situation. The team must gather information, investigate the environment, determine what is happening, and respond appropriately.
-
-Not every threat should be solved with gunfire.
-
-Some anomalies may be hostile creatures. Others may manipulate the environment, deceive players, create supernatural events, alter reality, or generate escalating waves of enemies.
-
-The combination of procedural missions, investigation, unpredictable anomalies, combat, SCAR-issued equipment, and multiplayer chaos should make each mission feel different.
-
-Players do not select from a roster of predefined heroes. Instead, each player builds their own SCAR operative through appearance customization, equipment selection, and mission preparation.
 
 ## Game Pillars
 ### Investigation

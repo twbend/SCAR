@@ -1,7 +1,5 @@
 # Getting Started
 
-[TOC]
-
 ## 0: Brief Project Overview
 
 ![Godot Image](Images/godot.png) ![Kotlin Image](Images/kotlin.png)
