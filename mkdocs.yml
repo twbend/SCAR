@@ -10,6 +10,7 @@ repo_url: https://github.com/twbend/SCAR
 
 # Navigation Structure
 nav:
-  - Home: Project_Overview.md
+  - Home: index.md
+  - Overview: Project_Overview.md
   - GettingStarted: Getting_Started.md
   - HelpfulResources: Helpful_Resources.md

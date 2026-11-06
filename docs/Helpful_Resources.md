@@ -1,3 +1,5 @@
+# Helpful Resources
+
 Godot Project Structure:
 - [https://www.youtube.com/watch?v=V4SO7foDoW4](https://www.youtube.com/watch?v=V4SO7foDoW4) 
 Godot Composition vs Inheritance
