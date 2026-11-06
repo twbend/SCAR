@@ -63,35 +63,6 @@ The ideal experience is:
 
 Players make a plan → the game disrupts the plan → players improvise → the situation escalates → players recover or fail.
 
-## Survival & Adaptation
-
-Players should be rewarded for understanding and adapting to threats rather than simply overpowering everything.
-
-Different encounters should encourage different responses:
-
-- Fight.
-    
-- Run.
-    
-- Hide.
-    
-- Investigate.
-    
-- Contain.
-    
-- Avoid.
-    
-- Distract.
-    
-- Manipulate the environment.
-    
-- Use SCAR-issued equipment.
-    
-- Complete an objective while under pressure.
-    
-
-The game should create meaningful decisions about whether a threat should be confronted or avoided.
-
 # Inspirations
 
 ## Helldivers 2
